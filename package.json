@@ -1,7 +1,7 @@
 {
-  "name": "openclaw-desktop",
+  "name": "librechat-desktop",
   "version": "1.0.0",
-  "description": "OpenClaw Desktop",
+  "description": "LibreChat Desktop",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -9,8 +9,8 @@
     "build:portable": "electron-builder --win portable"
   },
   "build": {
-    "appId": "com.openclaw.desktop",
-    "productName": "OpenClaw",
+    "appId": "com.librechat.desktop",
+    "productName": "LibreDesk",
     "win": {
       "target": ["nsis", "portable"],
       "icon": "icon.png"
