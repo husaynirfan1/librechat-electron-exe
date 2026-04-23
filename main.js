@@ -1,7 +1,7 @@
 const { app, BrowserWindow, shell, Menu } = require("electron");
 const path = require("path");
 
-const OPENCLAW_URL = "https://desktop-70q4ln0.tail871780.ts.net";
+const LIBRECHAT_URL = "https://<URLGOESHERE>";
 
 let mainWindow;
 
@@ -24,11 +24,11 @@ function createWindow() {
   Menu.setApplicationMenu(null);
 
   // Load the Tailscale URL
-  mainWindow.loadURL(OPENCLAW_URL);
+  mainWindow.loadURL(LIBRECHAT_URL);
 
   // Open external links in default browser
   mainWindow.webContents.setWindowOpenHandler(({ url }) => {
-    if (!url.startsWith(OPENCLAW_URL)) {
+    if (!url.startsWith(LIBRECHAT_URL)) {
       shell.openExternal(url);
       return { action: "deny" };
     }
